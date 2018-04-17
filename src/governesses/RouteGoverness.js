@@ -6,11 +6,9 @@ export default class RouteGoverness extends HeadGoverness {
   constructor({ from, to, next }) {
     super();
 
-    if (this) {
-      this.next = next;
-      this.from = from;
-      this.to = to;
-    }
+    this.next = next;
+    this.from = from;
+    this.to = to;
   }
 
   guard(action) {
